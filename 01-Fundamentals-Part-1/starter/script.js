@@ -122,15 +122,79 @@ console.log(age);
 // console.log(century);
 
 // Type conversion
-inputType = "1990";
-console.log(Number(inputType), "1990");
-console.log(Number(inputType) + 10);
+// inputType = "1990";
+// console.log(Number(inputType), "1990");
+// console.log(Number(inputType) + 10);
 
-console.log(Number("Vuoch"));
-console.log(typeof NaN);
+// console.log(Number("Vuoch"));
+// console.log(typeof NaN);
 
-// Type coercion
-console.log("I'm " + 20 + " years old.");
-console.log(2 + 9 + "45"); // "1145"
-console.log("5" - 4 - "10"); // -9
-console.log("5" + 4 + "1" - 50); // 541 - 50 = 491
+// // Type coercion
+// console.log("I'm " + 20 + " years old.");
+// console.log(2 + 9 + "45"); // "1145"
+// console.log("5" - 4 - "10"); // -9
+// console.log("5" + 4 + "1" - 50); // 541 - 50 = 491
+
+// Truthy and Falsy values
+// 5 falsy value: 0, '', undefined, null and NaN
+/* console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(""));
+console.log(Boolean({}));
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all");
+} else {
+  console.log("You should get a job!"); // this condition will execute because 0 is falsy value.
+}
+
+let height;
+if (height) {
+  console.log("Height is defined.");
+} else {
+  console.log("Height is undefined.");
+} */
+
+// Lecture: Equality operators == vs ===
+// const age = "18";
+// if (age === 18) console.log("You just became an adult (strict).");
+// if (age == 18) console.log("You just become an adult (loose).");
+
+// const favorite = Number(prompt("What's your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if (favorite === 11) {
+//   // '11' === 11 => false
+//   console.log("Cool! 11 is an amazing number.");
+// } else if (favorite === 7) {
+//   console.log("7 also is an amazing number.");
+// } else if (favorite === 10) {
+//   console.log("10 is also an amazing number.");
+// } else {
+//   console.log("Number is not 7, 10 or 11");
+// }
+
+// Lecture: Logical operators
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sara is able to drive");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sara is able to drive");
+} else {
+  console.log("Someone else should drive...");
+}
