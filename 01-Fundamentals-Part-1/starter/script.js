@@ -177,12 +177,12 @@ if (height) {
 // }
 
 // Lecture: Logical operators
-const hasDriversLicense = true; // A
-const hasGoodVision = true; // B
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; // B
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
 
 // if (hasDriversLicense && hasGoodVision) {
 //   console.log("Sara is able to drive");
@@ -190,11 +190,89 @@ console.log(!hasDriversLicense);
 //   console.log("Someone else should drive...");
 // }
 
-const isTired = false; // C
-console.log(hasDriversLicense && hasGoodVision && isTired);
+// const isTired = false; // C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-  console.log("Sara is able to drive");
-} else {
-  console.log("Someone else should drive...");
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log("Sara is able to drive");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+// Lecture: Switch statement
+/*
+const day = "sunday";
+
+switch (day) {
+  case "monday": // day === monday
+    console.log("Research from dribble to get ideas");
+    console.log("Design UI for portfolio project");
+    break;
+  case "tuesday":
+    console.log("Find resources for the project");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Coding the project");
+    break;
+  case "friday":
+    console.log("Testing the website");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy my weekend day!");
+    break;
+  default:
+    console.log("Not a valid day!");
 }
+
+// Convert switch to if else statement
+if (day === "monday") {
+  console.log("Research from dribble to get ideas");
+  console.log("Design UI for portfolio project");
+} else if (day === "tuesday") {
+  console.log("Find resources for the project");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Coding the project");
+} else if (day === "friday") {
+  console.log("Testing the website");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy my weekend day!");
+} else {
+  console.log("Not a valid day!");
+}
+*/
+
+// Lecture: Expressions and Statements
+// Expressions
+// 3 + 5;
+// (true && true) || !false;
+
+// Statements
+// if (56 > 45) {
+//   const str = "56 is bigger.";
+// }
+
+// console.log(`I'm ${2025 - 2005} years old.`);
+
+// Lecture: The conditional (ternary) operator
+const age = 17;
+
+// age >= 18
+//   ? console.log("I like to drink wine 🍷")
+//   : console.log("I like to drink water 💧");
+
+const drink = age >= 18 ? "drink wine 🍷" : "drink water 💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "drink wine 🍷";
+} else {
+  drink2 = "drink water 💧";
+}
+console.log(drink2);
+
+console.log(
+  `I like to drink ${age >= 18 ? "drink wine 🍷" : "drink water 💧"}`
+);
