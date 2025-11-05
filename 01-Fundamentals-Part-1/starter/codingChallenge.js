@@ -33,7 +33,27 @@ if (markBMI > johnBMI) {
 }
 
 // Coding Challenge #3
-const dolphinsScore1 = 96;
+// const dolphinsScore1 = 96;
+// const dolphinsScore2 = 108;
+// const dolphinsScore3 = 89;
+// const dolphinsAverageScore =
+//   (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+
+// const koalasScore1 = 88;
+// const koalasScore2 = 91;
+// const koalasScore3 = 110;
+// const koalasAverageScore = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+
+// console.log(dolphinsAverageScore, koalasAverageScore);
+// if (dolphinsAverageScore > koalasAverageScore) {
+//   console.log("Dolphins team is winner");
+// } else if (dolphinsAverageScore === koalasAverageScore) {
+//   console.log("Both team are draw.");
+// } else {
+//   console.log("Koalas team is winner.");
+// }
+
+const dolphinsScore1 = 110;
 const dolphinsScore2 = 108;
 const dolphinsScore3 = 89;
 const dolphinsAverageScore =
@@ -45,10 +65,19 @@ const koalasScore3 = 110;
 const koalasAverageScore = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
 
 console.log(dolphinsAverageScore, koalasAverageScore);
-if (dolphinsAverageScore > koalasAverageScore) {
-  console.log("Dolphins team is winner");
-} else if (dolphinsAverageScore === koalasAverageScore) {
-  console.log("Both team are draw.");
+if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100) {
+  console.log("Dolphins team is winner and has at least 100 score.");
+} else if (
+  koalasAverageScore > dolphinsAverageScore &&
+  koalasAverageScore >= 100
+) {
+  console.log("Koalas team is winner and has at least 100 score.");
+} else if (
+  dolphinsAverageScore === koalasAverageScore &&
+  dolphinsAverageScore >= 100 &&
+  koalasAverageScore >= 100
+) {
+  console.log("Both team are draw and has at least 100 score.");
 } else {
-  console.log("Koalas team is winner.");
+  console.log("No one team win.");
 }
